@@ -32,9 +32,9 @@ export default function App() {
     setError('');
 
     try {
-      const res = await axios.post('http://localhost:4000/analyze', {
-        text: inputText,
-      });
+        const res = await axios.post('/analyze', {
+        text: inputText
+        });
 
       if (!res.data.analysis || res.data.error) {
         setError('Hubo un error al analizar el texto. Intenta más tarde.');
