@@ -38,7 +38,7 @@ app.post('/analyze', async (req, res) => {
           content: `Eres un experto en ciberseguridad. 
 Analiza el siguiente mensaje y devuelve un puntaje de riesgo por categoría en formato JSON con estas claves: urgencia, premio, enlace, datos. 
 Cada clave debe tener un valor: "Bajo", "Medio" o "Alto". 
-Después del JSON, escribe una explicación de cada punto en lenguaje natural.`
+Después del JSON, escribe una explicación breve de cada punto en lenguaje natural.`
         },
         { role: 'user', content: text }
       ],
