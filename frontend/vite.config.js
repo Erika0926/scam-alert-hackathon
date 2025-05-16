@@ -8,6 +8,9 @@ export default defineConfig({
     port: 80,
     host: true,
     strictPort: true,
-    allowedHosts: ['ec2-18-226-28-226.us-east-2.compute.amazonaws.com']
+    allowedHosts: ['ec2-18-226-28-226.us-east-2.compute.amazonaws.com'],
+    proxy: {
+      '/analyze': 'http://localhost:4000'
+    }
   }
-});
+});  
